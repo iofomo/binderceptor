@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.ifma.cmpt.demo.binderceptor">
+
+    <instrumentation android:label="Tests for ${applicationId}"
+        android:name="androidx.test.runner.AndroidJUnitRunner"
+        android:targetPackage="${applicationId}"
+        android:handleProfiling="false"
+        android:functionalTest="false"
+        />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:name="com.ifma.cmpt.demo.DemoApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme">
+        <uses-library android:name="android.test.runner"/>
+
+        <!-- main process -->
+        <activity android:name="com.ifma.cmpt.demo.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.ifma.cmpt.demo.main.MainService" android:exported="true" />
+        <provider android:name="com.ifma.cmpt.demo.main.MainProvider"
+            android:authorities="${applicationId}.MainProvider"
+            android:exported="true"
+            />
+
+        <activity android:name="com.ifma.cmpt.demo.main.ConsoleActivity" android:exported="true" />
+
+    </application>
+
+</manifest>

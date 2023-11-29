@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+
+android {
+    def globalConfig = rootProject.extensions.getByName("ext")
+    buildToolsVersion globalConfig.getAt("androidBuildToolsVersion")
+    compileSdkVersion globalConfig.getAt("androidCompileSdkVersion")
+
+    defaultConfig {
+        minSdkVersion globalConfig.getAt("androidMinSdkVersion")
+        targetSdkVersion globalConfig.getAt("androidTargetSdkVersion")
+    }
+    lintOptions {
+        disable "BlockedPrivateApi", "DiscouragedPrivateApi", "PrivateApi", "SoonBlockedPrivateApi"
+    }
+}
+
+repositories {
+    flatDir {
+        dirs '../files', 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}

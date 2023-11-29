@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/window_bg"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/console_title"
+        style="@style/TitleText"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/title_console"
+        />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical">
+        <TextView android:id="@+id/console"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/title_text_gray2"
+            android:scrollbars="vertical"
+            android:padding="4dp"
+            />
+    </ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_bg">#ffffffff</color>
+    <color name="text_gray">#66000000</color>
+    <color name="title_text_gray">#ff000000</color>
+    <color name="title_text_gray2">#99000000</color>
+    <color name="divider_gray">#66ffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="red">#ffff0000</color>
+    <color name="shape_line">#ffcccccc</color>
+    <color name="background_gray">#ffc4c4c4</color>
+</resources>

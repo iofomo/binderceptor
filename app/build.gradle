@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+apply from: '../files/default.gradle'
+
+android {
+    def globalConfig = rootProject.extensions.getByName("ext")
+    buildToolsVersion globalConfig.getAt("androidBuildToolsVersion")
+    compileSdkVersion globalConfig.getAt("androidCompileSdkVersion")
+
+    defaultConfig {
+        applicationId "com.ifma.cmpt.demo.binderceptor"
+        minSdkVersion globalConfig.getAt("androidMinSdkVersion")
+        targetSdkVersion globalConfig.getAt("androidTargetSdkVersion")
+        versionCode globalConfig.getAt("androidVersionCode")
+        versionName globalConfig.getAt("androidVersionName")
+
+        testInstrumentationRunner globalConfig.getAt("testInstrumentationRunner")
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+    }
+
+    sourceSets {
+        main {
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('../files/ifmSharedTest.keystore')
+            storePassword '3e6a74f5718c1b984c9ffa935c543924'
+            keyAlias 'ifm-shared-test'
+            keyPassword '3e6a74f5718c1b984c9ffa935c543924'
+        }
+        release {
+            storeFile file('../files/ifmSharedTest.keystore')
+            storePassword '3e6a74f5718c1b984c9ffa935c543924'
+            keyAlias 'ifm-shared-test'
+            keyPassword '3e6a74f5718c1b984c9ffa935c543924'
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), '../proguard-rules.pro'
+            consumerProguardFiles '../proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    flatDir {
+        dirs '../files', 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation (name: 'cmpt-utils', ext: 'aar')
+    implementation (name: 'cmpt-testin', ext: 'aar')
+
+    // add module depend
+    implementation project(':cmpt-mts-binderceptor')
+}

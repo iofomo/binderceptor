@@ -1,0 +1,18 @@
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://www.jitpack.io' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+    }
+}
+
+ext {
+    androidBuildToolsVersion = "29.0.3"
+    androidCompileSdkVersion = 29
+    androidVersionCode = 1
+    androidVersionName = "1.0"
+    androidMinSdkVersion = 29// 10.0
+    androidTargetSdkVersion = 30// 11.0
+    testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+}

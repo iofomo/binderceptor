@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/window_bg"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout style="@style/list_item_bg_single_label_layout">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_weight="1.0"
+                    android:text="@string/title_sub"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/main_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12.0dip"
+                    android:text="v1.0"
+                    android:textColor="@color/text_gray"
+                    android:textSize="12.0dip"/>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/item_unittest" style="@style/list_item_bg_single_layout">
+                <TextView style="@style/founction_item_text" android:text="@string/title_sub_unittest" />
+                <ImageView style="@style/founction_item_image" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/item_xxx" style="@style/list_item_bg_single_layout">
+                <TextView style="@style/founction_item_text" android:text="@string/title_sub_xxx" />
+                <ImageView style="@style/founction_item_image" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

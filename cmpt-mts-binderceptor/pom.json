@@ -1,0 +1,11 @@
+{
+    "mvn": [
+        {
+            "groupId": "com.iofomo.android",
+            "artifactId": "mts-binderceptor",
+            "version": "1.0",
+            "file": "build/outputs/aar/cmpt-mts-binderceptor-release.aar",
+            "packaing": "aar"
+        }
+    ]
+}

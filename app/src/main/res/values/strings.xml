@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Binderceptor</string>
+
+    <string name="text_ok">确定</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_yes">是</string>
+    <string name="text_no">否</string>
+    <string name="text_next">下一步</string>
+    <string name="text_share">分享</string>
+    <string name="text_info">提示</string>
+    <string name="text_enable">已启用</string>
+    <string name="text_disable">未启用</string>
+    <string name="text_submit">提交</string>
+    <string name="text_reset">重置</string>
+
+    <string name="title_console">控制台</string>
+
+    <string name="title_unittest">单元测试</string>
+    <string name="title_xxx">XXX</string>
+
+    <string name="title_test">Test</string>
+
+    <string name="title_sub">Sub</string>
+    <string name="title_sub_unittest">单元测试(Sub)</string>
+    <string name="title_sub_xxx">XXX(Sub)</string>
+
+</resources>
