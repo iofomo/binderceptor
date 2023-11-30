@@ -1,8 +1,10 @@
 # Binderceptor
+
 <p align="left">
     <img src="doc/README.assets/license-mit.svg" alt="license:MIT" />
     <img src="doc/README.assets/python-2x3x.svg" alt="python:2x3x" />
 </p>
+
 ### 说明
 
 `Binderceptor`是`Android`平台下底层`Binder`拦截器，目的是解决现有方案拦截不全，开发效率低的问题，具有以下特点：
@@ -64,6 +66,6 @@ out
 
 ### 许可协议
 
-本项目基于`MIT`许可协议，详情查看 [许可协议](*doc/LICENSE*) 文档。
+本项目基于`MIT`许可协议，详情查看 [许可协议](doc/LICENSE) 文档。
 
 >   本项目和所有的工具都是MIT许可证下的开源工具，这意味着你可以完全访问源代码，并可以根据自己的需求进行修改。
