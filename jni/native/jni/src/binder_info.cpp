@@ -2,6 +2,7 @@
 #include "cmn_utils.h"
 #include "binder_info.h"
 #include "cmn_mutex.h"
+#include <string.h>
 
 // Note: must be kept in sync with android/os/StrictMode.java's PENALTY_GATHER
 // defined in Parcel.cpp
@@ -42,6 +43,13 @@ void TBinderTokenItem::initEnv() {
             g_strict_mode_value = STRICT_MODE_PENALTY_GATHER_6;
         }
     }
+}
+
+bool TBinderTokenItem::isTargetToken(uint16_t* token, int32_t len) {
+    if (len == tokenLen && token && tokenPtr) {
+        return 0 == memcmp(token, tokenPtr, len);
+    }
+    return false;
 }
 
 __DEF_AUTO_RELEASE_MUTEX(binder_token_log);

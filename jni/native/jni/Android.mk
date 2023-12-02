@@ -7,6 +7,10 @@ MODULE_SRC_FILES := \
         src/binderceptor_main.cpp \
         src/binderceptor_native.cpp \
         src/binderceptor_debug.cpp \
+		src/binder_parcel.cpp \
+		src/binder_parcel_pool.cpp \
+		src/binder_android_parcel.cpp \
+		src/binder_jvm_parcel.cpp \
 
 
 ########################### build for shared library

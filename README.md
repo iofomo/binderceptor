@@ -19,6 +19,8 @@
 
 [【Android】深入底层Binder拦截](https://blog.csdn.net/chendianbo/article/details/134719327)
 
+[【集成开发】](doc/sdk.md)
+
 ### 快速开始
 
 本项目在以下开发环境中编译通过：
