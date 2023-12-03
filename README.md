@@ -5,7 +5,7 @@
     <img src="doc/README.assets/python-2x3x.svg" alt="python:2x3x" />
 </p>
 
-### 说明
+## 说明
 
 `Binderceptor`是`Android`平台下底层`Binder`拦截器，目的是解决现有方案拦截不全，开发效率低的问题，具有以下特点：
 
@@ -21,7 +21,7 @@
 
 [【集成开发】](doc/sdk.md)
 
-### 快速开始
+## 快速开始
 
 本项目在以下开发环境中编译通过：
 
@@ -66,7 +66,11 @@ out
 │            └── libifmabinderceptor-jni.so
 ```
 
-### 许可协议
+## 感谢小伙伴们
+
+![](doc/README.assets/thanks.png)
+
+## 许可协议
 
 本项目基于`MIT`许可协议，详情查看 [许可协议](doc/LICENSE) 文档。
 
