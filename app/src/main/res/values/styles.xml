@@ -63,7 +63,7 @@
         <item name="android:clickable">true</item>
     </style>
 
-    <style name="founction_item_text" >
+    <style name="function_item_text" >
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingTop">16dp</item>
@@ -74,7 +74,7 @@
         <item name="android:textColor">@color/title_text_gray</item>
         <item name="android:textSize">16sp</item>
     </style>
-    <style name="founction_item_image" >
+    <style name="function_item_image" >
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginRight">12dp</item>

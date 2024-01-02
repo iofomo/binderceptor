@@ -42,13 +42,13 @@
             </LinearLayout>
 
             <LinearLayout android:id="@+id/item_unittest" style="@style/list_item_bg_single_layout">
-                <TextView style="@style/founction_item_text" android:text="@string/title_unittest" />
-                <ImageView style="@style/founction_item_image" />
+                <TextView style="@style/function_item_text" android:text="@string/title_unittest" />
+                <ImageView style="@style/function_item_image" />
             </LinearLayout>
 
             <LinearLayout android:id="@+id/item_xxx" style="@style/list_item_bg_single_layout">
-                <TextView style="@style/founction_item_text" android:text="@string/title_xxx" />
-                <ImageView style="@style/founction_item_image" />
+                <TextView style="@style/function_item_text" android:text="@string/title_xxx" />
+                <ImageView style="@style/function_item_image" />
             </LinearLayout>
 
         </LinearLayout>

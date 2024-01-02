@@ -32,8 +32,8 @@
             </LinearLayout>
 
             <LinearLayout android:id="@+id/item_test_xxx" style="@style/list_item_bg_single_layout">
-                <TextView style="@style/founction_item_text" android:text="@string/title_xxx" />
-                <ImageView style="@style/founction_item_image" />
+                <TextView style="@style/function_item_text" android:text="@string/title_xxx" />
+                <ImageView style="@style/function_item_image" />
             </LinearLayout>
 
         </LinearLayout>
