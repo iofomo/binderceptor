@@ -152,6 +152,8 @@ public:
     inline unsigned getHash() const { return tokenHash; }
     inline int32_t getLength() const { return tokenLen; }
 
+    bool isTargetToken(uint16_t* token, int32_t len);
+
     static void initEnv();
 
 #ifdef __ENABLE_LOG_D__
